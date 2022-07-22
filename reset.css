@@ -1,0 +1,59 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CSS Reset by notnotjake (50 lines, 15 resets)
+
+Inspired by
+Joshua Comeau - https://www.joshwcomeau.com/css/custom-css-reset/#digit-sensible-media-defaults
+Modern CSS Reset - https://piccalil.li/blog/a-modern-css-reset/
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+/* Resets margins to 0 */
+* { margin: 0; }
+
+/* Bigger line height (variable to size) */
+* {	line-height: calc(1em + 0.5rem); }
+
+/* Stops padding from effecting element's size */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Allows for % measurements of elements */
+html, body { height: 100%; }
+
+/* Smooth Scrolling */
+html:focus-within { scroll-behavior: smooth; }
+
+/* Fixes Safari sub-pixel antialiasing */
+body { -webkit-font-smoothing: antialiased; }
+
+/* Body fills screen by default */
+body { min-height: 100vh; }
+
+/* Helps speed up site */
+body { text-rendering: optimizeSpeed; }
+
+/* Allow hard-wrapping on overflowing text */
+p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
+
+/* Form Controls inherit font settings */
+input, button, textarea, select { font: inherit; }
+
+/* Reset Lists (ONLY if they have role="list" attribute) */
+ul[role='list'], ol[role='list'] { list-style: none; padding: 0; }
+
+/* Reset Links (ONLY if they don't have a class attribute */
+a:not([class]) { text-decoration-skip-ink: auto; }
+
+/* Display media as block elements */
+img, picture, figure, video, canvas, svg { display: block; }
+	
+/* Sets max-width on media */
+img, picture, figure, video, canvas, svg { max-width: 100%; }
+
+/* Removes animations if Reduced Motion is set */
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
