@@ -36,6 +36,9 @@ p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
 /* Form Controls inherit font settings */
 input, button, textarea, select { font: inherit; }
 
+/* Button-remove all styling */
+button { all: unset; }
+
 /* Reset Lists (ONLY if they have role="list" attribute) */
 ul[role='list'], ol[role='list'] { list-style: none; padding: 0; }
 
